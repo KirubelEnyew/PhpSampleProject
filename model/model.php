@@ -15,7 +15,7 @@
            
            
         }
-        function excuteQuery ($queryTerm){
+        function executeQuery ($queryTerm){
             mysqli_query($this->conn,$queryTerm);
         }
         function fetchData($queryTerm){ 

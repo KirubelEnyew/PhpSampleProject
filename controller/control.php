@@ -12,13 +12,13 @@
                 $queryTerm = "INSERT INTO pizzas_table (pizzaName,ingredients) VALUES ('$name','$ingredients')";
                 echo $queryTerm;
                 
-                $this->excuteQuery($queryTerm);
+                $this->executeQuery($queryTerm);
                 
         }
         function removePizzaById($id){
             if($id){
                 $queryTerm = "DELETE FROM pizzas_table WHERE id=$id";
-                $this->excuteQuery($queryTerm);
+                $this->executeQuery($queryTerm);
             }else{
                 echo "Query failed";
             }
@@ -26,7 +26,7 @@
         function updatePizzaById($pizzaName,$ingredients,$id){
             if($id){
                 $queryTerm = "UPDATE pizza_table pizzaName = $pizzaName, ingredients = $ingredients WHERE id=$id";
-                $this->excuteQuery($queryTerm);
+                $this->executeQuery($queryTerm);
             }
         }
     }
